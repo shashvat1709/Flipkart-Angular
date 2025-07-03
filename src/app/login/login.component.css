@@ -1,0 +1,109 @@
+/* Removed global height rule */
+* {
+    color: white;
+    margin: auto;
+}
+
+/* Container for the login form */
+.login-container {
+    position: relative;
+    display: flex;
+    margin: auto;
+    height: 458px;
+    top: 94px;
+    width: 61%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -2px 4px 11px 0px rgb(101 101 10);
+}
+
+/* Left section (Section 1) */
+.login-container .section1 {
+    width: 36%;
+    height: 100%;
+    background: #368487;
+    padding: 12px;
+}
+
+.section1 h1 {
+    color: white;
+}
+
+/* Right section (Section 2) */
+.login-container .section2 {
+    width: 64%;
+    height: 100%;
+    padding: 20px; /* Added padding for better layout */
+    border: 0px solid rgb(156, 140, 140);
+}
+
+/* Input fields in Section 2 */
+.login-container .section2 input {
+    width: 90%; /* Adjusted to be responsive */
+    height: 40px; /* Reduced height for better layout */
+    margin-bottom: 20px; /* Added margin to separate fields */
+    border: none;
+    border-bottom: 2px solid gray;
+    padding-left: 10px; /* Adjusted padding for better text alignment */
+    font-size: 16px;
+    position: relative;
+    color: black; /* Changed color for input text */
+}
+
+.login-container .section2 input:focus {
+    outline: none;
+    border-bottom: 2px solid #368487; /* Highlight border color on focus */
+}
+
+
+.login-container .section2 h6 {
+    bottom:12px;
+    font-size: 12px;
+    color: black;
+    margin-top: 20px;
+}
+
+/* Submit button */
+.login-container .section2 .submit {
+    margin: auto;
+    display: flex;
+    justify-content: center; /* Center the button */
+    align-items: center;
+    border-radius: 7px;
+    border: 0px;
+    background-color: #368487;
+    height: 45px;
+    width: 308px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+h2 {
+    font-size: 23px;
+    font-family: system-ui;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.g_id_signin {
+    display: block;
+    position: relative;
+    bottom: -50px;
+    height: 44px;
+    width: 267px;
+    margin: 0 auto; /* Centered */
+}
+
+/* Signup link */
+.signUpLink {
+    color: rgb(24, 26, 175);
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signUpLink:hover {
+    cursor: pointer;
+}

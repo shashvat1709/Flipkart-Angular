@@ -1,0 +1,34 @@
+<app-header></app-header>
+
+<div class="login-container">
+    <div class="section1">
+
+        <h1>SignUp here<br><br><br>
+
+            <h5>Get access to your orders,<br>
+                wishlists and recommendations</h5>
+
+        </h1>
+
+
+
+    </div>
+    <div class="section2">
+
+        <input type="email" [(ngModel)]="signupObj.email" placeholder="Enter Email here...">
+        <input type="text"[(ngModel)]="signupObj.name" placeholder="name">
+        <input type="password" [(ngModel)]="signupObj.password" placeholder="password">
+
+
+        <h6>By continuing, you agree to Flipkart's Terms of User and user privacy policy</h6>
+
+        <button (click)="signup()" class="submit">
+            <h2>Submit</h2>
+        </button>
+        <a class="signUpLink" (click)="login()">Already have an account,Login?</a>
+       
+    </div>
+
+
+    
+  

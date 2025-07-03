@@ -1,0 +1,86 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    background-color: #2874f0;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    margin-top: 0px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+
+}
+.nav img{
+    margin: 2px;
+    padding-left: 2px;
+    position: relative;
+    padding-right: 2px;
+    height: 47px;
+    left: 150px;
+    width: 150px;
+    border-radius: 22px;
+    background-color: white;
+    color: white;
+}
+.nav ul li{
+   
+    display: inline;
+    list-style: none;
+    margin: 0px;
+    padding:0px;
+    justify-content: space-between;
+    color: white;
+    font-family: sans-serif;
+    font-size: larger;
+    position: relative;
+    right:20px;
+    margin-right: 40px;
+    border-radius: 22px;
+}
+.nav ul li a{
+    height: 12px;
+    width: 30px;
+    border-radius: 12px;
+    
+}
+.nav ul li:hover{
+
+
+    background-color: #46567000;
+    color: white;
+
+
+}
+
+
+.nav li a{
+    text-decoration: none;
+    color: white;
+}
+.nav input{
+    position: relative;
+    width: 340px;
+    height: 42px;
+    top: 3px;
+    padding-left: 31px;
+    border: 1px white;
+    font-size: 17px;
+    font-family: inherit;
+    border-radius: 2px;
+}
+.nav button{    position: relative;
+    width: 86px;
+    height: 42px;
+    left:7px;
+    top: 3px;
+    padding-left: 5px;
+    border: 1px white;
+    font-size: 17px;
+    font-family: inherit;
+    border-radius: 28px;
+
+}
+

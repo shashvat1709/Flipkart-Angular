@@ -1,0 +1,107 @@
+*{
+   
+    height: 100vh;
+    color: white;
+    margin: auto;
+}
+
+.login-container{
+    position: relative;
+    display: flex;
+    margin: auto;
+    height: 458px;
+    top: 94px;
+    width: 61%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -2px 4px 11px 0px rgb(101 101 10);
+    
+   
+    
+
+}
+.login-container .section1{
+
+    width: 36%;
+    height: 100%;
+    background: #368487;
+    border: 0px solid black;
+    padding: 12px;
+
+   
+
+}
+.section1 h1{
+    color: white;
+
+}
+.login-container .section2{
+    width: 64%;
+    height: 100%;
+    border: 0px solid rgb(156, 140, 140);
+}
+.login-container .section2 input {
+    width: 423px;
+    height: 40px; /* Adjust the height without using padding */
+    margin: 20px auto; /* Add margin to space out the fields */
+    border: 0;
+    border-bottom: 2px solid gray;
+    padding-left: 43px; /* Only use padding for left spacing */
+    display: block;
+    color: black;
+}
+
+.login-container .section2 input:focus {
+    outline: none;
+    border-bottom: 2px solid black; /* Change the focus color for better visibility */
+}
+
+.login-container .section2 h6{
+    font-size: 12px;
+    position: relative;
+    top: 228px;
+    left: 64px;
+    color: black;
+}
+
+.login-container .section2 .submit{
+
+    margin: auto;
+    display: flex;
+    position: relative;
+    bottom: 601px;
+    
+    border-radius: 7px;
+    border: 0px;
+    background-color: #368487;
+    align-items: center;
+    height: 45px;
+    width: 308px;
+
+}
+
+
+
+h2{
+    font-size: 23px;
+    font-family: system-ui;
+    margin-top: 6px;
+    align-items: center;
+    height: 100%;
+
+}
+
+
+
+
+.signUpLink{
+    color: rgb(24, 26, 175);
+    z-index: 100;
+    position: relative;
+    left: 142px;
+    bottom: 480px;
+
+    
+}
+.signUpLink:hover{
+    cursor: pointer;
+}

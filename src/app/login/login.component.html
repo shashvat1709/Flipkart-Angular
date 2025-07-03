@@ -1,0 +1,50 @@
+<app-header></app-header>
+
+<div class="login-container">
+    <div class="section1">
+
+        <h1>Login <br><br><br>
+
+            <h5>Get access to your orders,<br>
+                wishlists and recommendations</h5>
+
+        </h1>
+
+
+
+    </div>
+
+    <div class="section2">
+        <form [formGroup]="formGroup" (ngSubmit)="userlogin()">
+          <input type="email" formControlName="email" placeholder="Enter Email here..." />
+          <input type="password" formControlName="password" placeholder="password" />
+      
+        
+      
+          <button type="submit" class="submit">
+            <h2>Submit</h2>
+          </button>
+          <a class="signUpLink" (click)="signup()">Don't have an account? Sign up</a>
+        </form>
+      </div>v
+      
+
+
+    <div id="g_id_onload"
+    data-client_id="1029187089239-c3rod3p7km07cqv43baco9t81jsf9mk0.apps.googleusercontent.com"
+    data-context="signin"
+    data-ux_mode="popup"
+    data-login_uri="http://localhost:4200/app-login"
+    data-itp_support="true">
+    </div>
+
+    <div class="g_id_signin"
+    data-type="standard"
+    data-shape="rectangular"
+    data-theme="filled_black"
+    data-text="signin_with"
+    data-size="large"
+    data-logo_alignment="left">
+     </div>
+    
+     

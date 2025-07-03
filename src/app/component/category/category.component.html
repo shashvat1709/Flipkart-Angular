@@ -1,0 +1,30 @@
+ <app-header></app-header>
+ 
+ <div class="container-fluid" style="background-color: white; margin-top:80px">
+
+    <div class="row">
+        <div class="col-md-2 mt-3"*ngFor="let item of productdetails">
+            <div class="card mt-2">
+                <div class="card-body">
+                    <div class="card-img-actions">
+                        <img routerLink="/product-detail/{{item.id}}" src="{{item.thumbnail}}" class="card-img img-fluid" alt="">
+
+                    </div>
+
+                </div>
+                <div class="card-body bg-light text-center">
+                    <div>
+                        <h6 class="font-weight-semi-bold"></h6>
+                        <a routerLink="/product-detail/{{item.id}}" class="text-default"> {{item.title}}</a>
+                        
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold"> ₹{{(item.price*84)  | number:'1.2-2' }} </h3>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div> 

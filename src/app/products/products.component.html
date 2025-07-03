@@ -1,0 +1,26 @@
+<!--product display area-->
+<div class="container-fluid" style="background-color: white;">
+
+    <div class="row">
+        <div class="col-md-2 mt-3" *ngFor="let item of data.products">
+            <div class="card h-100 d-flex flex-column mt-2">
+                <div class="card-body d-flex flex-column">
+                    <div class="card-img-actions">
+                        <img routerLink="/product-detail/{{item.id}}" src="{{item.thumbnail}}" class="card-img img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="card-body bg-light text-center d-flex flex-column justify-content-between">
+                    <div>
+                        <h6 class="font-weight-semi-bold"></h6>
+                        <a routerLink="/product-detail/{{item.id}}" class="text-default"> {{item.title}}</a>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold"> ₹{{(item.price*INR)  | number:'1.2-2' }} </h3>
+                    <!-- Buttons for view details and add to cart (if needed) -->
+                    <!-- <button class="btn btn-sm btn-dark mt-2 "> <i class="fa fa-solid fa-info mr-2"></i>&nbsp;View Details </button>
+                    <button class="btn btn-sm btn-warning mt-2"><i class="fa fa-cart-plus mr-2"></i>&nbsp;Add to cart</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,152 @@
+.card{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    position: absolute;
+    padding: 100px;
+}
+.mt-4 {
+    margin-top: 2.5rem!important;
+}
+.bg-white {
+    box-shadow: 3px 3px 5px 1px rgb(101 101 101);
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-white-rgb),var(--bs-bg-opacity))!important;
+}
+
+
+.mt-5 {
+    margin-top: 7.5rem!important;
+
+}
+
+.mt-5 {
+    margin-top: 4.59rem!important;
+    padding: 30px;
+}
+.placeorder{
+
+    display: flex;
+    background-color: white;
+    width: 986px;
+    left: 22px;
+    align-items: center;
+    bottom: 0px;
+    position: fixed;
+    height: 75px;
+    box-shadow: -1px -2px 5px 1px rgb(101 101 101);
+}
+.order-btn{
+    display: flex;
+    position: absolute;
+    right: 12px;
+    padding: 6px;
+    margin-right: 2px;
+    border-radius: 9px;
+    background-color: #fb641b;
+    color: white;
+    font-size: 29px;
+    height: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: initial;
+    border: 0px;
+}
+
+
+/* increase decrease button */
+
+form {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  .value-button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px 0;
+    background: #eee;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .value-button:hover {
+    cursor: pointer;
+  }
+  
+  form #decrease {
+    margin-right: -4px;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  form #increase {
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  input#number {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+  .btnremove{
+    left: 12px;
+  }
+
+
+
+  .quantity-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-btn1, .quantity-btn2 {
+    width: 30px;
+    height: 30px;
+    background-color: #062e58;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1000;
+  }
+  
+  .quantity-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .quantity-display {
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  

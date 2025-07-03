@@ -1,0 +1,20 @@
+.section2-container{
+       
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 22px auto;
+    display: flex;
+    flex-wrap: wrap;
+    left: 0px;
+    width: 98%;
+    margin-top: 17px;
+    height: 234px;
+    background-color: white;
+    overflow: hidden;
+    justify-content: center;
+    padding: 0px;
+z-index: -2;
+
+}

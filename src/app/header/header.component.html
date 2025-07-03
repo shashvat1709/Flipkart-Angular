@@ -1,0 +1,44 @@
+<nav class="nav">
+
+    <div class="userDisplay" *ngIf="userEmail !== null">
+        <h5>Logged in as, {{ userEmail }}</h5>
+        <button (click)="logout()">Logout</button>  <!-- Show Logout button when user is logged in -->
+    </div>
+
+    <a routerLink=""> <img src="/assets/pngegg.jpeg" alt="Flipkart"></a>
+
+    <input type="text" [(ngModel)]="searchText" (keyup)="searchproduct($event)" placeholder="Search for products, brands, and more">
+
+    <div class="suggestion-box" *ngIf="showSuggestions && searchResult.length > 0">
+        <ul class="suggested-result">
+            <li *ngFor="let item of searchResult">
+                <div class="card" routerLink="/product-detail/{{item.id}}">
+                    <div class="card-image">
+                        <img src="{{item.thumbnail}}" style="width: 50px; height: 50px; left: 0px" alt="{{item.title}}">
+                    </div>
+                    <div class="title">
+                        <a style="font-size: small; color: black;">{{item.title}}</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <button (click)="submitSearch(searchText)">Search</button>
+
+    <ul>
+        <li><a routerLink="app-seller-auth">Become a seller</a></li>
+        
+        <!-- Show Login or Logout link based on user authentication state -->
+        <li *ngIf="userEmail === null"><a routerLink="app-login">Login</a></li>
+        <li *ngIf="userEmail !== null"><a (click)="logout()" class="logout" >Logout</a></li>
+        
+        <li><a routerLink="/app-cart">
+            <svg class="V3C5bO" width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path class="_1bS9ic" d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86" fill="#fff"></path>
+            </svg>
+            Cart ({{cartitems}})
+        </a></li>
+    </ul>
+
+</nav>

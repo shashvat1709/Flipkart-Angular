@@ -1,0 +1,73 @@
+<app-header></app-header>
+<ng-container *ngIf="showproduct.length != 0"  >
+    
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Cart Items Column -->
+            <div class="col-sm-9">
+                <h3>Your Cart Items </h3>
+                <table class="table table-borderless mt-4">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Brand</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Price</th>
+                            
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of showproduct">
+                            <td><img style="width: 120px;" src="{{ item.images[0] }}" alt=""></td>
+                            <td>{{ item.brand ? item.brand : 'Local/uncategorized' }}</td>
+                            <td>{{ item.category }}</td>
+                            <td>₹{{ item.price*INR  | number:'1.2-2'  }}</td>
+                    
+                            <td><button (click)="deleteitem(item)" class="btn btn-white">Remove</button></td>
+
+                            <!-- increase decrease button-->
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Price Details Column -->
+            <div class="col-sm-3 mt-5 bg-white" style=" max-height: 391px; min-height: 353px; ">
+                <h4 style="color: gray;">Price Details</h4>
+                <strong style="font-size: 25px; color:rgb(45, 148, 14)"> Total Amount: {{total*INR | number:'1.2-2' }}</strong><br>
+                <br>
+                <h6>Item amount: {{itemamount*INR | number:'1.2-2'}}</h6>
+                <h6 style="color: rgb(65, 145, 65);">Quantity : {{productQuantity}}</h6>
+                <h6>Delivery charges : INCL</h6>
+
+                <div class="btn-group mt-4">
+                    <!-- <button class="btn btn-primary ">Place Order</button>&nbsp; -->
+                    <button (click)="Empty()" class="btn btn-secondary ">Empty cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+<!-- Empty Cart -->
+<ng-container *ngIf="showproduct.length === 0">
+    <div class="card text-center">
+        <div class="card-body">
+            <h4>Your cart is empty</h4>
+            <h6>Please add items</h6>
+            <button routerLink='' class="btn btn-dark">Shop now</button>
+        </div>
+    </div>
+</ng-container>
+
+
+<ng-container *ngIf="showproduct.length != 0" >
+    <div class="placeorder">
+
+        <button class="order-btn" (click)="payNow()" ><h2>Place Order</h2></button>
+
+    </div>
+
+</ng-container>

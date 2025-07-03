@@ -1,0 +1,47 @@
+.card img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 12px;
+}
+
+.row {
+    margin-top: 34px;
+}
+.h3, h3 {
+    font-size: 12px;
+}
+
+body{
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.5385;
+    color: #333;
+
+    text-align: left;
+    
+}
+.card-img-actions{
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+.card {
+    height: 100%; /* Ensure that each card takes full height within its container */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out elements to fit the full height */
+}
+
+.card-img {
+    max-height: 150px; /* Limit the image height */
+    object-fit: cover; /* Ensure image covers the area without stretching */
+}
+
+h3 {
+    margin-top: auto; /* Push the title to the bottom of the card */
+}

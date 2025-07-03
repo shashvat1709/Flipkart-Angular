@@ -1,0 +1,50 @@
+.section1 .categories {
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap; 
+    width: 98%;
+    margin-top: 56px;
+    height: auto; 
+    background-color: white;
+    box-shadow: -1px -5px 14px 0px rgb(101 101 101);
+    overflow: hidden;
+    justify-content: center;
+    padding: 10px;
+  
+}
+
+.categories .item {
+  
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    width: 120px; 
+    margin: 10px; 
+    position: relative;
+    padding: 10px; 
+    box-sizing: border-box; 
+    
+}
+.item:hover{
+    cursor: pointer;
+}
+
+.item img {
+    height: 95px;
+    width: auto; 
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
+}
+
+.item:hover img {
+    transform: scale(1.1); 
+}
+
+.item span {
+    margin-top: 5px; 
+    font-weight: 700;
+    font-size: 14px; /* Text size */
+    color: #333; /* Text color */
+    text-align: center; /* Center text under the image */
+}

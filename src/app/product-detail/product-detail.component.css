@@ -1,0 +1,85 @@
+.forbg{
+    background-color: white;
+    height: 145vh;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+img{
+    
+    height: 400px;
+    margin-top: 85px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin-bottom: 18px;
+}
+.product-detial{
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.container{
+    display: flex;
+ 
+
+}
+.col-sm-8{
+   
+        margin-top: 121px;
+        width: 60%;
+    
+}
+
+
+.btn-buy {
+    border: 0px;
+    border-radius: 4px;
+    width: 237px;
+    margin: auto;
+    height: 54px;
+    position: absolute;
+    display: flex;
+    margin-left: 32px;
+    bottom: -63px;
+    color: rgb(255, 254, 251);
+    align-items: center;
+    padding-left: 17px;
+    left: 22px;
+    font-weight: 800;
+    font-size: xx-large;
+    padding: 2px;
+    }
+    .btn-buy h1{
+        font-size: 1.5rem;
+        margin: auto;
+    }
+
+.btn-add{
+    border: 0px;
+    border-radius: 4px;
+    width: 237px;
+    margin: auto;
+    height: 54px;
+    position: absolute;
+    display: flex;
+    margin-left: 32px;
+    bottom: -63px;
+    color: rgb(255, 254, 251);
+    align-items: center;
+    padding-left: 17px;
+    left: 238px;
+    font-weight: 800;
+    font-size: xx-large;
+    padding: 2px;
+
+
+}
+.btn-add h1{ 
+    
+    font-size: 1.5rem;
+    margin: auto;}
+
+
+

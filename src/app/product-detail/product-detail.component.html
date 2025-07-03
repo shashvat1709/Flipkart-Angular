@@ -1,0 +1,39 @@
+<app-header></app-header>
+<div class="forbg">
+<div class="container">
+
+    <div class="row product-detail">
+        <div class="col-sm-3" >
+            <img class="product-img" src="{{productdata.images[0]}}" alt="" >
+        </div>
+        <button style="background-color:rgb(221, 144, 1); margin:auto"  (click)="buynow()" class="btn-buy "><h1>Buy Now</h1></button>
+        <button class="btn-add"  (click)="addtocart(productdata)"  *ngIf="showadd" style="background-color:rgb(196, 3, 3)"><h1>Add to cart</h1></button>
+        <button class="btn-add" (click)="removeitem(productdata)" *ngIf="showremove" style="background-color:rgb(196, 3, 3)"><h1>Remove item</h1></button>
+
+    </div>
+
+    <div class="col-sm-8">
+        <div>
+            <h1>{{productdata.title}}</h1>
+            <P style="color: green;">Offer Price</P>
+            <h1>Price: ₹{{(productdata.price)*INR |number:'1.2-2' }} </h1>
+            <h5  style="color: grey;" ><strike>Original Price: ₹{{(originalPrice)*INR |number:'1.2-2' }} </strike></h5>
+   
+
+            <strong>Category:&nbsp;{{productdata.tags}}</strong><br><br><br><br>
+
+            <strong>Description:</strong><br>
+            <P>{{productdata.description}}</P>
+            <br><br><br>
+             <P style="color: green; font-weight:600">Discount : {{productdata.discountPercentage}}%</P>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+</div>
+
+<app-footer></app-footer>
