@@ -1,68 +1,57 @@
-Flipkart Clone – Angular Project
-This project is a frontend e-commerce application built using Angular. It replicates the core flow of Flipkart, including product listing, cart management, search functionality, and a responsive user interface. The project is structured using Angular components, services, and routing to keep everything modular and easy to maintain.
-Angular Structure
+📦 Flipkart Clone – Angular Project
 
-Component-based architecture for better reusability.
+This is a frontend e-commerce web application built using Angular. It replicates Flipkart-like features such as product listing, search suggestions, cart management, and routing. The project is fully component-based and easy to extend.
 
-Separate components for header, navbar, product listing, product details, search, cart, and categories.
 
-Organized folder structure to maintain clean code.
+🚀 Features
+🔹 Angular Structure
+Component-based architecture for reusability
+Separate components for:
+Header
+Navbar
+Product listing
+Product details
+Cart
+Categories
+Search
+Well-organized folder structure
 
-Routing and Navigation
+🔹 Routing & Navigation
 
-Angular Router is used for smooth navigation.
+Smooth navigation using Angular Router
+Routes include:
+/home
+/product/:id
+/cart
+No page reload during navigation (SPA behavior)
 
-Includes routes such as home, product details page, and cart page.
+🔹 Product Handling
 
-Navigation works without page reload.
+Product list displayed using reusable components
+Dynamic product details page using route parameters
+JSON used as mock backend (can be replaced with API later)
 
-Product Handling
+🔹 Add to Cart
+Add, remove
+Cart stored in localStorage to persist after refresh
+Cart count displayed in the navbar
 
-Product list displayed through reusable components.
+🔹 Search Functionality
 
-Product details route with dynamic IDs.
+Live search suggestions
+Suggestions include product name + image
+Filters results dynamically as you type
 
-JSON used for mock data, which can be replaced later with an actual backend API.
+🔹 UI & Responsiveness
 
-Add to Cart Functionality
+Clean and minimal layout
+Uses Bootstrap / NgBootstrap
+Carousel included on the homepage
 
-Add, remove, and update items in the cart.
-
-Cart saved in localStorage to preserve data on refresh.
-
-Cart item count shown in the navbar.
-
-Search Feature
-
-Search bar with instant suggestions.
-
-Suggestions display both product name and image.
-
-Filtered search results shown dynamically.
-
-Services
-
-ProductService for loading product data.
-
-CartService for managing cart actions.
-
-Shared services used for communication across components.
-
-Responsive UI
-
-Works on desktop, tablet, and mobile screens.
-
-Uses Bootstrap / NgBootstrap for styling and carousel.
-
-Clean and simple layout similar to real e-commerce websites.
-Tech Stack
-
+🛠️ Tech Stack
 Angular 9
-
 TypeScript
-
-Bootstrap / NgBootstrap
-
 RxJS
+Bootstrap / NgBootstrap
+LocalStorage
 
-LocalStorage for cart persistence
