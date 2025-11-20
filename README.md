@@ -1,99 +1,61 @@
-📦 Flipkart Clone – Angular Project
+Flipkart Clone – Angular Project
+This project is a frontend e-commerce application built using Angular. It replicates the core flow of Flipkart, including product listing, cart management, search functionality, and a responsive user interface. The project is structured using Angular components, services, and routing to keep everything modular and easy to maintain.
+Angular Structure
 
-A fully responsive e-commerce front-end built using Angular, designed to simulate major features of Flipkart such as product listing, product details, cart management, and category browsing.
+Component-based architecture for better reusability.
 
-🚀 Features (Angular)
-✔️ Component-Based Architecture
+Separate components for header, navbar, product listing, product details, search, cart, and categories.
 
-Built using reusable Angular components:
+Organized folder structure to maintain clean code.
 
-Header & Navbar
+Routing and Navigation
 
-Carousel / Banner
+Angular Router is used for smooth navigation.
 
-Product Cards
+Includes routes such as home, product details page, and cart page.
 
-Product Categories
+Navigation works without page reload.
 
-Cart Component
+Product Handling
 
-Wishlist Component (if added)
+Product list displayed through reusable components.
 
-Search Suggestion Component
+Product details route with dynamic IDs.
 
-✔️ Routing & Navigation
+JSON used for mock data, which can be replaced later with an actual backend API.
 
-Angular Router used for:
+Add to Cart Functionality
 
-/home
+Add, remove, and update items in the cart.
 
-/products
+Cart saved in localStorage to preserve data on refresh.
 
-/product/:id
+Cart item count shown in the navbar.
 
-/cart
+Search Feature
 
-Seamless navigation without page reloads.
+Search bar with instant suggestions.
 
-✔️ Services for Data Handling
+Suggestions display both product name and image.
 
-Implemented Angular services such as:
+Filtered search results shown dynamically.
 
-ProductService
+Services
 
-CartService
+ProductService for loading product data.
 
-AuthService (if signup/login enabled)
+CartService for managing cart actions.
 
-These services handle:
+Shared services used for communication across components.
 
-Data fetching
+Responsive UI
 
-Local storage handling
+Works on desktop, tablet, and mobile screens.
 
-Updating UI reactively
+Uses Bootstrap / NgBootstrap for styling and carousel.
 
-✔️ Search Bar with Suggestions
-
-Type-ahead search
-
-Filters results dynamically
-
-Shows suggestions with product images
-
-✔️ Add to Cart Functionality
-
-Add / remove products
-
-Update quantity
-
-Cart stored in localStorage
-
-Cart icon shows item count
-
-✔️ Responsive UI (small size desktop)
-
-Flexbox / Grid Layouts
-
-Optimized for small and large screens
-
-Mobile drawer navbar (if you added)
-
-✔️ NgBootstrap / Bootstrap UI
-
-If your project uses Bootstrap:
-
-Responsive carousel
-
-Buttons, cards, spacings
-
-✔️ JSON-Based Mock Backend
-
-Product data stored in local JSON files
-
-Easy to replace with REAL API later
-
-🛠️ Tech Stack
+Clean and simple layout similar to real e-commerce websites.
+Tech Stack
 
 Angular 9
 
@@ -103,4 +65,4 @@ Bootstrap / NgBootstrap
 
 RxJS
 
-LocalStorage for storing cart data
+LocalStorage for cart persistence
